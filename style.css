@@ -1,0 +1,213 @@
+:root {
+    --bg-color:0, 0, 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+html, body {
+    display: block;
+    min-height: 100vh;
+    min-height: 100svh;
+    background-color:rgb(var(--bg-color));
+}
+.section {
+    display: block;
+    height: 90vh;
+    overflow-y: hidden;
+}
+.video-container {
+    display: block;
+    min-height: calc(70vh + 100px);
+    overflow-y: hidden;
+    position: relative;
+    overflow-x: hidden;
+}
+.anchor {
+    font-size: 20px;
+    font-weight: 600;
+} 
+#myVideo {
+    min-width: 100%;
+    min-height: calc(105vmin + 120px);
+    z-index: 0;
+    margin-left: -15%;
+  }
+header {
+    width: 100%;
+    height: calc(10vmin + 30px);
+    position: fixed;
+    background: rgb(var(--bg-color), .9);
+    z-index: 3;
+    margin-top: 1vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+nav {
+    display: flex; 
+    width: 100%;
+    align-items: center;
+    position: relative;
+    justify-content: space-evenly;
+  }
+nav > a {
+    padding: calc(5vmin + 5px) 0;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    text-shadow: 0 0 ;
+}
+nav > a:hover {
+    text-shadow: 0 0 10px white;
+}
+
+#sect1 {
+    width: 45%;
+    height: 100%;
+    z-index: 2;
+    border-top-left-radius: 50%;
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+}
+#sect1 > h2,
+#sect1 > p,
+#sect1 > a {
+    color: black;
+}
+#sect1 > h2 {
+    font-size: calc(3vw + 15px);
+    font-weight: bold;
+    
+}
+#sect1 > p {
+    font-weight: 600;
+    margin: 10vmin;
+    margin-right: 0;
+    margin-left: 0;
+}
+#sect1 > a {
+    width: calc(10vmin + 60px);
+    height: calc(2vmin + 40px);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: 0.4s ease;
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    -ms-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+}
+#sect1 > a:hover {
+    background-color: rgb(50, 116, 214);
+    box-shadow: 0 0 30px 1px rgb(50, 116, 214);
+}
+.section {
+    background: white;
+    display: flex;
+    width: 100%;
+    height: calc(100vh + 75px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15vw;
+    overflow: hidden;
+    text-align: justify;
+}
+#sect2 {
+    margin-top: 0;
+}
+#sect4 {
+    height: calc(150vmin + 150px);
+}
+.section > h2 {
+    margin-top: calc(4vmin + 40px);
+    margin-bottom: calc(4vmin + 40px);
+    font-weight: 900;
+    font-size: calc(5vmin + 5px);
+}
+.section > p {
+    color: black;
+    font-weight: 800;
+    font-size:calc(3vmin + 5px);
+}
+@media only screen and (max-width:650px) {
+    .anchor {
+        font-size: 4vmin;
+    }
+    #myVideo {
+        min-height: 100vmin;
+        margin-left: -120%;
+        margin-top: -5vmin;
+    }
+    .section {
+        overflow-y: auto;
+    }
+    .section > p {
+        font-size: calc(2vw + 7px);
+    }
+    #sect4 > p {
+        font-size:calc(2vmin + 5px)
+    }
+}
+@media only screen and (max-width:1168px) {
+.section {
+        overflow-y: auto;
+    }
+
+#sect4 > p {
+    font-size: calc(2vmin + 5px);
+}
+}
+.container {
+    width: 100%;
+    height: calc(90vmin + 100px);
+}
+.moonimg {
+    width: calc(250px + 15vmin);
+    height: calc(200px + 10vmin);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3vmin;
+}
+.footer {
+    border-top: black solid 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+    background: white;
+    color: black;
+    font-weight: 900;
+    text-align: center;
+}

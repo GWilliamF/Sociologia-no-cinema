@@ -1,0 +1,46 @@
+:root {
+    --bg-color:0, 0, 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+html, body {
+    display: block;
+    min-height: 100vh;
+    min-height: 100svh;
+    background: rgb(214, 214, 214);
+}
+.container {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    height: 90svh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 10vw;
+}
+.container > h1 {
+    font-size: calc(5vmin + 5px);
+}
+.q1,.q2,.q3,.q4,.q5, .submitbtn {
+    outline: none;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    background: transparent;
+    height:150px;
+    border-radius:50px;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    -ms-border-radius:50px;
+    -o-border-radius:50px;
+    overflow: visible;
+}
+.res1,.res2,.res3,.res4 {
+    display: none;
+}
